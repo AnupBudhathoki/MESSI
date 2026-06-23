@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+#ball img{
+    width: 100px;
+    position: relative;
+    animation-name: move;
+    animation: move 3s forwards;
+    /* animation-duration: 5s; */
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(-300px);
+        animation-timing-function: ease-in;
+    }
+    60%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    75%{
+        transform: translateY(-80px);
+        animation-timing-function: ease-in;
+    }
+    85%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    93%{
+        transform: translateY(-30px);
+        animation-timing-function: ease-in;
+    }
+    100%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}

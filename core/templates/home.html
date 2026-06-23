@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+</head>
+
+<body>
+    <div id="wish">Happy Birthday 🐐</div>
+    <div class="ph">
+        <img src="{% static 'core/images/L.jpeg' %}" alt="">
+    </div>
+    <div id="heart">
+        <img src="{% static 'core/images/h.png' %}" alt="">
+    </div>
+    <div id="arati">
+        <img src="{% static 'core/images/arti.png' %}" alt="">
+    </div>
+
+    <audio autoplay loop>
+        <source src="{% static 'core/images/bdsong.m4a' %}" type="audio/mp3">
+    </audio>
+
+    <script src="{% static 'core/js/home.js' %}"></script>
+</body>
+
+</html>

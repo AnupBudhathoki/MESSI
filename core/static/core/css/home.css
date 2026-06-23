@@ -1,0 +1,64 @@
+body {
+    background-color: aquamarine;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+.ph {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#wish {
+    color: red;
+    text-align: center;
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#heart {
+    position: absolute;
+    width: 50px;
+    animation: float 5s linear;
+}
+
+#heart img {
+    width: 100%;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+#arati{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    animation: moveArati 5s linear infinite;
+}
+
+#arati img{
+    width: 200px;
+    height: auto;
+}
+
+@keyframes moveArati {
+    from{
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
