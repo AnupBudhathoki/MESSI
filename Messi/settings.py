@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 DEBUG = config("DEBUG",cast=bool)
 
-ALLOWED_HOSTS = ["messi-nvpn.onrender.com", "http://127.0.0.1:8000/"]
+ALLOWED_HOSTS = ["messi-nvpn.onrender.com", "127.0.0.1", "localhost",]
 
 
 # Application definition
